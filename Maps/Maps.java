@@ -13,7 +13,7 @@ public class Main
 		LinkedHashSet h = new LinkedHashSet();
 	    int flag = 1;
 	    int i = 0;
-		for (i = 0; i < arr.length;i++)
+		for (i = 0; i < arr.l ength;i++)
        {
           h.add(arr[i]);
         }
