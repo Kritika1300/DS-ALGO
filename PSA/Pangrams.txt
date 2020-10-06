@@ -1,0 +1,41 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String p = sc.nextLine();
+		 System.out.println(p);
+		int arr[] = new int [26];
+		for(int i = 0; i< 26;i++)
+		{
+		   arr[i] = 0;
+		}
+		for(int i = 0; i< p.length();i++)
+		{
+		   for(int j = 0; j <26; j++)
+		{   
+            if(p.charAt(i) == 97 + j)
+		    {
+		        arr[j]++;
+		       
+		    }
+		 }
+		}
+		boolean flag = true;
+		for(int j = 0; j <26; j++)
+		{
+		    if(arr[j] == 0)
+		    {
+		       flag = false;
+		       break;
+		    }
+		}
+		if(flag == true)
+		{
+		  System.out.println("p");  
+		}
+		else{
+		    System.out.println("np");  
+		}
+	}
+}
