@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    String s = sc.nextLine();
+	    String[] str = s.split(" ");
+	    int i =0;
+	    int j = str.length-1;
+	    while(i<j)
+	    {
+	        String temp = str[i];
+	        str[i] = str[j];
+	        str[j] = temp;
+	        i++;
+	        j--;
+	    }
+	    String f = " ";
+	    for(String a : str)
+	    {
+	        f = f + a+ " ";
+	       
+	    }
+	     System.out.print(f.trim());
+	
+		
+	}
+}
