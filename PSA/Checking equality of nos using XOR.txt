@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int x = sc.nextInt();
+	    int y = sc.nextInt();
+	    int q = x^y;
+	    if(q == 0){
+	        System.out.println("EQUAL");
+	    }
+	    System.out.println("NOT EQUAL");
+	    
+		
+	}
+}
+
