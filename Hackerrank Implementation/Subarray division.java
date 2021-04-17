@@ -24,7 +24,7 @@ public class Solution {
                if(sum == d) {
                    count++;
                }
-               sum =0;
+               sum = 0;
            }
         return count;
     }
